@@ -15,9 +15,10 @@
     "build": "npm-run-all clean tsc",
     "start": "node .",
     "check-types": "tsc --noEmit",
-    "eslint": "eslint src/**/*.ts",
-    "eslint:fix": "eslint src/**/*.ts --fix",
-    "lint": "npm-run-all eslint check-types"
+    "fix:prettier": "prettier --write src",
+    "lint:prettier": "prettier --check src",
+    "lint": "run-p lint:prettier lint:eslint",
+    "lint:eslint": "eslint src --ext .ts"
   },
   "repository": {
     "type": "git",
