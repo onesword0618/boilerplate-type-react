@@ -1,12 +1,17 @@
+#  ##   ##  ######   ##   ##   ####      ####   ##   ##   #####   ######   ####### #
+#  ###  ##   ##  ##  ### ###    ##      ##  ##  ###  ##  ##   ##   ##  ##   ##   # #
+#  #### ##   ##  ##  #######    ##     ##       #### ##  ##   ##   ##  ##   ## # #
+#  ## ####   #####   #######    ##     ##       ## ####  ##   ##   #####    #### #
+#  ##  ###   ##      ## # ##    ##     ##  ###  ##  ###  ##   ##   ## ##    ## # #
+#  ##   ##   ##      ##   ##    ##      ##  ##  ##   ##  ##   ##   ##  ##   ##   # #
+#  ##   ##  ####     ##   ##   ####      #####  ##   ##   #####   #### ##  ####### #
+src/
+tests/
 dist
-.DS_Store
+docs
 Thumbds.db
 .github
 .vscode
-docs
-node_modules/
-src/
-tests/
 .editorconfig
 .eslintrc.json
 .gitattributes
@@ -19,5 +24,3 @@ babel.config.js
 jest.config.ts
 SECURITY.md
 tsconfig.json
-
-
