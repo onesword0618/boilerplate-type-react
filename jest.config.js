@@ -1,27 +1,16 @@
-/* eslint-disable max-len */
-/*
- *     ####  #######   #####   ######              ####    #####   ##   ##  #######   ####      ####
- *      ##    ##   #  ##   ##  # ## #             ##  ##  ##   ##  ###  ##   ##   #    ##      ##  ##
- *      ##    ## #    #          ##              ##       ##   ##  #### ##   ## #      ##     ##
- *      ##    ####     #####     ##              ##       ##   ##  ## ####   ####      ##     ##
- *  ##  ##    ## #         ##    ##              ##       ##   ##  ##  ###   ## #      ##     ##  ###
- *  ##  ##    ##   #  ##   ##    ##               ##  ##  ##   ##  ##   ##   ##        ##      ##  ##
- *   ####    #######   #####    ####               ####    #####   ##   ##  ####      ####      #####
- */
-
 module.exports = {
   clearMocks: true,
   coverageDirectory: 'coverage',
   coveragePathIgnorePatterns: ['/node_modules/'],
   coverageProvider: 'v8',
   coverageReporters: ['json'],
-  moduleFileExtensions: ['js', 'json', 'jsx', 'ts', 'tsx'],
-  testEnvironment: 'node',
-  testMatch: ['**/__tests__/**/*.+(ts|tsx)', '**/?(*.)+(spec|test).+(ts|tsx)'],
+  moduleFileExtensions: ['js', 'ts', 'tsx'],
+  testEnvironment: 'jsdom',
+  testMatch: ['**/?(*.)+(spec|test).+(ts|tsx)'],
   testPathIgnorePatterns: ['/node_modules/'],
   transform: {
-    '^.+\\.(js|jsx|mjs)$': 'babel-jest',
-    '^.+\\.(ts|tsx)$': 'ts-jest',
+    '^.+\\.tsm?$': '<rootDir>/node_modules/babel-jest',
+    '^.+\\.(ts|tsx)$': '<rootDir>/node_modules/ts-jest',
   },
   transformIgnorePatterns: ['/node_modules/'],
 };
