@@ -2,7 +2,7 @@
   "display": "play typescript",
   "include": [
     "src/**/*",
-    "tests/**/*"
+    "test/**/*"
   ],
   "exclude": [
     "node_modules"
@@ -12,6 +12,8 @@
     "lib": [
       "ES2019"
     ],
+    "allowJs": true,
+    "noEmit": true,
     "target": "ES2019",
     "module": "umd",
     "jsx": "react",
