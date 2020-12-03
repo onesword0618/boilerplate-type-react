@@ -1,17 +1,10 @@
 {
   "display": "play typescript",
-  "include": [
-    "src/**/*",
-    "test/**/*"
-  ],
-  "exclude": [
-    "node_modules"
-  ],
+  "include": ["src/**/*", "test/**/*"],
+  "exclude": ["node_modules"],
   "compilerOptions": {
     "incremental": true,
-    "lib": [
-      "ES2019"
-    ],
+    "lib": ["ES2019"],
     "allowJs": true,
     "noEmit": true,
     "target": "ES2019",
@@ -47,9 +40,7 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "paths": {
-      "*": [
-        "@types/*"
-      ]
+      "*": ["@types/*"]
     }
   }
 }
