@@ -35,13 +35,19 @@
     "lint": "run-p lint:prettier lint:eslint",
     "lint:eslint": "eslint src --ext .ts"
   },
-  "dependencies": {},
+  "dependencies": {
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
   "devDependencies": {
     "@babel/core": "7.12.3",
     "@babel/preset-env": "7.12.1",
     "@babel/preset-react": "7.12.5",
     "@babel/preset-typescript": "7.12.1",
+    "@testing-library/dom": "7.28.1",
+    "@testing-library/jest-dom": "5.11.6",
     "@testing-library/react": "11.2.2",
+    "@testing-library/user-event": "12.2.2",
     "@types/eslint": "7.2.4",
     "@types/jest": "26.0.15",
     "@types/node": "14.14.7",
@@ -49,15 +55,19 @@
     "@types/react": "16.9.56",
     "@types/react-dom": "16.9.9",
     "@types/react-test-renderer": "16.9.3",
+    "@types/testing-library__dom": "7.5.0",
     "@typescript-eslint/eslint-plugin": "4.7.0",
     "@typescript-eslint/parser": "4.7.0",
     "babel-jest": "26.6.3",
+    "bs-jest-dom": "4.1.1",
     "eslint": "7.13.0",
     "eslint-config-google": "0.14.0",
     "eslint-config-prettier": "6.15.0",
+    "eslint-plugin-jest-dom": "3.3.0",
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-react": "7.21.5",
     "eslint-plugin-react-hooks": "4.2.0",
+    "eslint-plugin-testing-library": "3.10.1",
     "eslint-plugin-tsdoc": "0.2.7",
     "husky": "4.3.0",
     "jest": "26.6.3",
@@ -65,8 +75,7 @@
     "npm-run-all": "4.1.5",
     "prettier": "2.1.2",
     "pretty-format": "26.6.2",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
+    "react-select-event": "5.1.0",
     "react-test-renderer": "17.0.1",
     "rimraf": "3.0.2",
     "ts-jest": "26.4.4",
@@ -83,7 +92,6 @@
   },
   "lint-staged": {
     "*.@(ts|tsx)": [
-      "npm run lint",
       "npm run format"
     ]
   }
